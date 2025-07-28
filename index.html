@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>かわいいポモドーロタイマー</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="timer-container">
+        <div id="mode-display">作業中</div>
+        <div id="timer-display">25:00</div>
+        <div class="buttons">
+            <button id="start-btn">スタート</button>
+            <button id="stop-btn">ストップ</button>
+            <button id="reset-btn">リセット</button>
+        </div>
+    </div>
+
+    <div class="sound-test-container">
+        <button id="test-work-sound">作業開始音</button>
+        <button id="test-break-sound">休憩開始音</button>
+    </div>
+
+    <!-- 音声再生用のHTML要素をここに追加 -->
+    <audio id="work-sound-audio" src="https://soundeffect-lab.info/sound/button/mp3/button44.mp3" preload="auto"></audio>
+    <audio id="break-sound-audio" src="https://soundeffect-lab.info/sound/button/mp3/button46.mp3" preload="auto"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
